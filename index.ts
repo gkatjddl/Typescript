@@ -33,3 +33,19 @@ let 오브젝트 : {_name:string , _age:number, _adult: boolean} =
   _age:33,
   _adult:true
 }
+
+// title, btn
+let title =  document.getElementById('title');
+let btn =  document.getElementById('btn');
+// 버튼을 누르면 title태그의 html내용을 '반갑습니다' 로 바꿔주자
+// 1. 버튼 아이디를 찾아서 클릭이벤트를 넣어준다.
+if(btn != null){
+  btn.addEventListener('click',()=>{
+  if(title != null){
+    title.innerHTML = "반갑습니다"
+  }
+  })
+}else{
+  console.log('btn이 없습니다')
+}
+
